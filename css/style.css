@@ -1,0 +1,324 @@
+html,
+body {
+  /* font-family: 'Kosugi Maru', sans-serif;
+  font-family: 'Sawarabi Mincho', sans-serif; */
+  font-family: 'Noto Serif JP', serif;
+  font-smoothing: antialiased;
+  height: 100%;
+  /* background: gray; */
+}
+
+a {
+  color: inherit;
+  text-decoration: none !important;
+}
+
+#sidebar {
+  animation-duration .2s;
+  background-color: rgba(84, 106, 123, 0.95);
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top 0;
+  width: 300px;
+  z-index: 1;
+}
+#sidebar ul {
+  display: table;
+  position: relative;
+  top: 6em;
+  width: 100%;
+}
+#sidebar ul li {
+  border-style: none;
+  display: table;
+  font-size: 20px;
+  font-weight: 400;
+  height: 60px;
+  margin-bottom: 5px;
+  width: 100%;
+}
+#sidebar ul li:hover {
+  background-color: #222426 !important;
+  color: #546a7b !important;
+}
+#sidebar ul li a {
+  background-color: rgba(84, 106, 123, 0);
+  color: inherit;
+  display: table-cell;
+  height: 100%;
+  padding-left: 1.2em;
+  text-decoration: none;
+  transform: translate(-5px, 0);
+  transition: .6s ease-out;
+  vertical-align: middle;
+  width: 100%;
+}
+#sidebar ul li a:hover {
+  color: #00f6ed !important;
+  transform: translate(5px, 0);
+  transition: .2s linear;
+}
+
+/* ポートフォリオ */
+#projects {
+  background-color: #E45E32; /* 丹色（にいろ）*/
+  padding: 80px 0;
+}
+#projects h2 {
+  display: block;
+  font-size: 38px;
+  font-weight: 400;
+  letter-spacing: 5px;
+  margin: 0 !important;
+  margin-after: .83em;
+  margin-before: .83em;
+  padding-bottom: 50px;
+  position: relative;
+  text-align: center;
+}
+
+#procects h2after {
+  bottom: 30px;
+  content: "";
+  display: block;
+  height: 3px;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  width: 100px;
+}
+
+/* わたしについて */
+#about {
+  background-color: #FBFBF6; /* 卯の花色 */
+  margin: 0;
+  min-height: 70%;
+  padding: 60px;
+}
+
+#about h2 {
+  display: block;
+  font-size: 38px;
+  font-weight: 400;
+  letter-spacing: 5px; /* 文字の間隔 */
+  margin: 0 !important;
+  marigin-after: .83em;
+  margin-before: .83em;
+  padding-bottom: 50px;
+  text-align: center;
+}
+#about h2after {
+  bottom: 30px;
+  content: "";
+  display: block;
+  height: 3px;
+  position: absolute;
+  transform: translateX(-50%);
+  width: 100px;
+}
+#about div {
+  /* font-family: 'Sawarabi Mincho', sans-serif; */
+  font-size: 100%;
+  font-weight: 200;
+  letter-spacing: 1px;
+  line-height: 2.0em;
+  text-indent: 2px;
+}
+
+.profile-img {
+  margin-bottom: 15px;
+  width: 170px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.about-info {
+  padding: 2% 3% 1% 1%;
+  font-size: 2.0em;
+}
+.about-tools, .about-last {
+  padding: 4% 10% 1% 10%;
+  font-size: 1.25em; }
+  .about-tools {
+    padding-top: 4.375em;
+    font-weight: 400;
+    font-size: 1.5em; }
+    @media screen and (min-width: 992px) {
+      .about-tools {
+        padding-top: 5.625em; } }
+    .about-tools ul:first-child {
+      padding-left: 0px; }
+    .about-tools ul {
+      color: #25b79f;
+      list-style: none; }
+      .about-tools ul li {
+        padding-top: 0.75em; }
+  .about-last {
+    padding-top: 3.125em;
+    padding-bottom: 0;
+    font-size: 1.125em; }
+    @media screen and (min-width: 992px) {
+      .about-last {
+        padding-top: 0; } }
+    .about-last p {
+      color: #25b79f; }
+
+#contact {
+  backgroudn-color: #67A2A0;
+  font-size: 25px;
+}
+#contact strong {
+  color: #00f6ed;
+}
+
+@media (min-width: 1024px) {
+  #menu-button {
+    font-size: 14px;
+    left: 2.5em;
+    position: fixed;
+    top: 2.5em;
+    z-index: 2;
+  }
+
+  #home h1 p {
+    font-size: 40px;
+    font-weight: 400; /* 太さ */
+  }
+  #home h1 strong {
+    font-size: 42px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  #menu-button {
+    font-size: 12px;
+    left: 2.5em;
+    position: fixed;
+    top: 2.5em;
+    z-index: 2;
+  }
+
+  #home h1 p {
+    font-size: 36px;
+    font-weight: 400;
+  }
+  #home h1 strong {
+    font-size: 40px;
+  }
+}f
+@media (min-width: 320px) and (max-width: 767px) {
+  #menu-button {
+    font-size: 10px;
+    left: 2.5em;
+    position: fixed;
+    top: 2.5em;
+    z-index: 2;
+  }
+
+  #home h1 p {
+    font-size: 30px;
+    font-weight: 400;
+  }
+  #home h1 strong {
+    font-size: 34px;
+  }
+
+  #contact button {
+    font-size: .7em;
+  }
+  #contact p {
+    font-size: .7em;
+  }
+}
+.dark-gray-background {
+  background-color: #67A2A0; /* 山藍摺 */
+}
+
+.dark-gray-font {
+  color: #524748 !important; /* 紅消鼠 */
+}
+
+.light-white-font {
+  color: #FBFBF6;
+}
+
+.light-blue-background {
+  background-color: #edf9f9;
+}
+
+.middle-blue-font {
+  color: #002E4E; /* 濃藍 */
+}
+
+.middle-blue-background {
+  background-color: #67A2A0;
+}
+
+.dark-blue-font {
+  color: #6C9BD2; /* み空色 */
+}
+
+.center {
+  left: 50%;
+  position: relative;
+  top: 50;
+  transform: translate(-50%, 50%); /* topの位置*/
+}
+
+.container-fluid {
+  min-height: 100%; /* 高さの最小値 */
+  padding: 0;
+}
+
+.fill {
+  height: 100%;
+  min-height: 100%;
+}
+
+.footer {
+  bottom: 0;
+  min-height: 30%;
+  position: relative;
+}
+.footer .container {
+  left: 50px;
+  padding-top: 1.3em;
+  position: absolute;
+  top: 50%;
+  transform: translate(0%,-50%);
+  width: 100%;
+}
+
+#contact {
+  background-color: #67A2A0; /* 山藍摺 */
+ }
+.contact-social-icons ul a {
+  color: #002E4E;
+  list-style: none; }
+  .contact-social-icons ul a:hover {
+    color: #FBFBF6; }
+  .contact-social-icons ul a li {
+    display: inline-block;
+    padding: 1%; }
+
+/* .footer {
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  background-color: #07374a;
+  color: #f0f0e6; } */
+
+
+  /* ポートフォリオボタン */
+.portfolio-projects--btn {
+  background: transparent;
+  color: #07374a;
+  border: 1px solid #07374a;
+  border-radius: 5px;
+  margin-bottom: 1.25em;
+}
+.portfolio-projects--btn:hover {
+    background: #E45E32;
+    color: #f0f0e6;
+  }
