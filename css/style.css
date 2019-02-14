@@ -165,9 +165,13 @@ a {
     .about-last p {
       color: #25b79f; }
 
+.co {
+  font-size: 37px;
+}
+
 #contact {
   backgroudn-color: #67A2A0;
-  font-size: 25px;
+  font-size: 24px;
 }
 #contact strong {
   color: #00f6ed;
@@ -294,13 +298,16 @@ a {
   background-color: #67A2A0; /* 山藍摺 */
  }
 .contact-social-icons ul a {
-  color: #002E4E;
-  list-style: none; }
-  .contact-social-icons ul a:hover {
-    color: #FBFBF6; }
-  .contact-social-icons ul a li {
+  color: black;
+  list-style: none;
+}
+.contact-social-icons ul a:hover {
+    color: #FBFBF6;
+}
+.contact-social-icons ul a li {
     display: inline-block;
-    padding: 1%; }
+    padding: 2%;
+}
 
 /* .footer {
   bottom: 0;
